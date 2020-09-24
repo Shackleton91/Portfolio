@@ -1,3 +1,4 @@
+
 // Hamburger Nav// 
 
 var hamburger = document.querySelector('.navbar__hamburger');
@@ -5,6 +6,10 @@ var menuitem = document.querySelectorAll('.navbar__menuitem');
 var icontop = document.querySelector('.navbar__hamburger-top');
 var iconmiddle = document.querySelector('.navbar__hamburger-middle');
 var iconbottom = document.querySelector('.navbar__hamburger-bottom');
+// On Button//
+const OnButton = document.querySelectorAll("a")[5];
+
+console.log(OnButton)
 
 hamburger.addEventListener('click', function() {
     for (var i = 0; i < menuitem.length; i++) {
@@ -45,7 +50,7 @@ function draw() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   for (var i = 0; i < drops.length; i++) {
     var text = letters[Math.floor(Math.random() * letters.length)];
-    ctx.fillStyle = '#0f0';
+    ctx.fillStyle = '#fff';
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
     drops[i]++;
     if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
@@ -57,13 +62,13 @@ function draw() {
 // Loop the animation
 setInterval(draw, 33);
 
-
-// On Button//
-$(document).ready(function(){
-    $('#button').click(function(){
-      $(this).toggleClass('on');
-    });
-  }); 
+// Power Button 
+ OnButton.addEventListener("click", ()=> {
+   OnButton.classList.add("on")
+  //  add variables for button on i.e change color
+  // variable.classlist.List.add
+  
+ }) 
   // Slider//
   var slider = {
   
@@ -121,4 +126,6 @@ $(document).ready(function(){
     
   };
   
-  slider.init();
+  slider.init(); 
+
+  // Contact Form
