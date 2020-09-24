@@ -65,6 +65,7 @@ setInterval(draw, 33);
 // Power Button 
  OnButton.addEventListener("click", ()=> {
    OnButton.classList.add("on")
+   OnButton.getElementById.add()
   //  add variables for button on i.e change color
   // variable.classlist.List.add
   
