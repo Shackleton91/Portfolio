@@ -134,7 +134,7 @@
   align-items: center;
   flex-direction: column;
   background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
-  border-radius: 8px;
+  border-radius: 50px;
   }
 
 .About { 
@@ -142,7 +142,8 @@ display: flex;
  justify-content: center;
 align-items: center;
 flex-direction: column;
-  border-radius: 8px;
+background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
+  border-radius: 30px;
   text-align: center;
   }
   .Projects {
@@ -150,7 +151,7 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 30px;
   } 
   .Experience {
     display: flex;
@@ -168,17 +169,14 @@ align-items: center;
   border-radius: 8px; 
  }   
 
-  /* Images */
-  .circuit-city {
-    margin: 80px;
-    border-radius: 8px;
-    opacity: 0.6;
-    align-items: center;
-  }
+//  .container {  
+  // background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
+// }   
+
   .me {
-    margin: 40px;
-    border-radius: 35%;
-    height: 150px;
+    margin: 30px;
+    border-radius: 30%;
+    height: 225px;
     opacity: 0.6;
     align-items: center;
   } 

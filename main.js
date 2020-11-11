@@ -9,8 +9,9 @@ var iconbottom = document.querySelector('.navbar__hamburger-bottom');
 // On Button//
 const OnButton = document.querySelectorAll("a")[5];
 
-console.log(OnButton)
 
+
+// Nav&Hamburger Nav
 hamburger.addEventListener('click', function() {
     for (var i = 0; i < menuitem.length; i++) {
         menuitem[i].classList.toggle('navbar__menuitem--toggled');
@@ -21,10 +22,16 @@ hamburger.addEventListener('click', function() {
     iconbottom.classList.toggle('navbar__hamburger-bottom--toggled');
 });
 
-//Binary text animation//
+
+
+// Power Button 
+ OnButton.addEventListener("click", ()=> {
+   OnButton.classList.add("on");
+  //  OnButton.classList.remove("on")
+ //Binary text animation//
 // Initialising the canvas
 var canvas = document.querySelector('canvas'),
-    ctx = canvas.getContext('2d');
+ctx = canvas.getContext('2d');
 
 // Setting the width and height of the canvas
 canvas.width = window.innerWidth;
@@ -36,38 +43,35 @@ letters = letters.split('');
 
 // Setting up the columns
 var fontSize = 10,
-    columns = canvas.width / fontSize;
+columns = canvas.width / fontSize;
 
 // Setting up the drops
 var drops = [];
 for (var i = 0; i < columns; i++) {
-  drops[i] = 1;
+drops[i] = 1;
 }
 
 // Setting up the draw function
 function draw() {
-  ctx.fillStyle = 'rgba(0, 0, 0, .1)';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  for (var i = 0; i < drops.length; i++) {
-    var text = letters[Math.floor(Math.random() * letters.length)];
-    ctx.fillStyle = '#fff';
-    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-    drops[i]++;
-    if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
-      drops[i] = 0;
-    }
-  }
+ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+for (var i = 0; i < drops.length; i++) {
+var text = letters[Math.floor(Math.random() * letters.length)];
+ctx.fillStyle = '#fff';
+ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+drops[i]++;
+if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+  drops[i] = 0;
+}
+}
 }
 
 // Loop the animation
 setInterval(draw, 33);
-
-// Power Button 
- OnButton.addEventListener("click", ()=> {
-   OnButton.classList.add("on")
- 
-  //  add variables for button on i.e change color
+  
   // variable.classlist.List.add
+  
+
   
  }) 
   // Slider//
