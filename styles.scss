@@ -145,6 +145,7 @@ flex-direction: column;
 background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   border-radius: 30px;
   text-align: center;
+  padding: 20px;
   }
   .Projects {
     display: flex;
@@ -185,7 +186,8 @@ align-items: center;
     border-radius: 8px;
     opacity: 0.6;
     align-items: center;
-  
+    z-index: -1;
+    position: relative;
   }  
   :active, :focus {
 	outline: 0;
@@ -483,6 +485,7 @@ span.flickering-3 {
 }
 .slider {
   overflow-x: scroll;
+  max-width: 300%;
 }
 .holder {
   width: 300%;
@@ -494,6 +497,9 @@ span.flickering-3 {
   position: relative;
   background-position: -100px 0;
 }
+
+.slider-stopper  { position: absolute; top: 1px; right: 20px; background: #ac0000; color: white;
+  padding: 3px 8px; font-size: 10px; text-transform: uppercase; z-index: 1000; }
 .temp {
   position: absolute;
   color: white;

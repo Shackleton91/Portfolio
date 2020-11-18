@@ -1,4 +1,4 @@
-
+window.scrollTo(0,0);
 // Hamburger Nav// 
 
 var hamburger = document.querySelector('.navbar__hamburger');
@@ -75,7 +75,7 @@ setInterval(draw, 33);
   
  }) 
   // Slider//
-  var slider = {
+  const slider = {
   
     // Not sure if keeping element collections like this
     // together is useful or not.
@@ -131,6 +131,5 @@ setInterval(draw, 33);
     
   };
   
-  slider.init(); 
-
   // Contact Form
+  
