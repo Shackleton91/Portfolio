@@ -510,7 +510,7 @@ span.flickering-3 {
   font-family: 'Lato', sans-serif;
 }
 #slide-0 {
-  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+  background-image: url(Shift-Reporter.png);
 }
 #slide-1 {
   background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
@@ -853,4 +853,27 @@ fieldset {
     align-items: flex-start;
   align-items: center;
   flex-direction: column;
+} 
+
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+

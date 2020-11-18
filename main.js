@@ -22,13 +22,7 @@ hamburger.addEventListener('click', function() {
     iconbottom.classList.toggle('navbar__hamburger-bottom--toggled');
 });
 
-
-
-// Power Button 
- OnButton.addEventListener("click", ()=> {
-   OnButton.classList.add("on");
-  //  OnButton.classList.remove("on")
- //Binary text animation//
+//Binary text animation//
 // Initialising the canvas
 var canvas = document.querySelector('canvas'),
 ctx = canvas.getContext('2d');
@@ -65,15 +59,35 @@ if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
 }
 }
 }
+let interval;
 
-// Loop the animation
-setInterval(draw, 33);
+// Power Button 
+let toggle = false;
+ OnButton.addEventListener("click", ()=> {
+  toggle = !toggle;
+  console.log(toggle);
+  if (toggle === true){
+    OnButton.classList.add("on");
+    // Loop the animation
+    interval = setInterval(draw, 33);
+  } else {
+    clearInterval(interval);
+    OnButton.classList.remove("on");
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+  }
+  
+  //  OnButton.classList.remove("on")
+ 
+
+
   
   // variable.classlist.List.add
   
 
   
  }) 
+
+//  ----------
   // Slider//
   const slider = {
   
@@ -131,5 +145,9 @@ setInterval(draw, 33);
     
   };
   
+
+
+  
   // Contact Form
   
+

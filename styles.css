@@ -571,7 +571,7 @@
   }
 
   #slide-0 {
-    background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+    background-image: url(Shift-Reporter.png);
   }
 
   #slide-1 {
@@ -910,4 +910,26 @@
   align-items: flex-start;
   align-items: center;
   flex-direction: column;
+}
+
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
 }
