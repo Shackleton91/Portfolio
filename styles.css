@@ -555,7 +555,7 @@
   }
 
   #slide-0 {
-    background-image: url(http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg);
+    background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
   }
 
   #slide-1 {
@@ -563,7 +563,13 @@
   }
 
   #slide-2 {
-    background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+    background-image: url(High-Roller-Img.png);
+    max-width: 100%;
+  }
+
+  #slide-3 {
+    background-image: url(morse-pic.jpg);
+    max-width: 100%;
   }
 
   .slide:before {
