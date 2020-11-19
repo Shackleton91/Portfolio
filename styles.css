@@ -1,3 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+canvas {
+  display: block;
+}
+
+/* The image used */
+#canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.canvas {
+  font-size: #fff;
+}
+
 * body {
   background-color: black;
   margin: 40px;
@@ -6,6 +34,183 @@
 }
 * body canvas {
   display: block;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+section .card {
+  padding: 0;
+  margin: 0;
+  background-color: #262528;
+  color: white;
+  font-family: "DM Mono", monospace;
+}
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+}
+
+.card {
+  /* ... */
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.card-author {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+
+.author-avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 16px 10px;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.card-header {
+  margin-bottom: auto;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #7a7a8c;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  margin: 0.25rem 0 auto;
+  cursor: pointer;
+}
+
+.card-header h2:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tags {
+  margin: 1rem 0 2rem;
+  padding: 0.5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.tags a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5rem;
+  color: #7a7a8c;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  border: 3px solid #28242f;
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem 0.25rem;
+  position: relative;
+}
+
+.tags a:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
 }
 
 /* For mobile phones: */
@@ -120,19 +325,16 @@
 }
 
 .navbar__menuitem--toggled {
-  background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   display: block;
   font-family: "Lato", sans-serif;
 }
 
 .navbar__menuitem:hover {
-  background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   border-left-color: #FFF;
   font-family: "Fira Sans", sans-serif;
 }
 
 .navbar__logo {
-  background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   display: block;
   border-radius: 8px;
 }
@@ -178,7 +380,6 @@
     background: #fff;
   }
 
-  /* H2 and p tags */
   .landing {
     display: flex;
     align-items: flex-start;
@@ -186,6 +387,7 @@
     flex-direction: column;
     background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
     border-radius: 50px;
+    margin-bottom: 200px;
   }
 
   .About {
@@ -193,10 +395,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
-    border-radius: 30px;
+    border-radius: 50px;
     text-align: center;
     padding: 20px;
+    margin-bottom: 200px;
   }
 
   .Projects {
@@ -204,7 +406,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 30px;
+    border-radius: 50px;
+    margin-bottom: 200px;
   }
 
   .Experience {
@@ -212,7 +415,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: black;
     border-radius: 8px;
+    margin-bottom: 200px;
   }
 
   .Contact {
@@ -221,6 +426,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
+    margin-bottom: 200px;
   }
 
   .me {
@@ -578,274 +784,6 @@
       opacity: 1;
     }
   }
-  /* Slider for Projects */
-  @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
-  .slider-wrap {
-    width: 300px;
-    height: 500px;
-    margin: 20px auto;
-  }
-
-  .slider {
-    overflow-x: scroll;
-    max-width: 300%;
-  }
-
-  .holder {
-    width: 300%;
-  }
-
-  .slide {
-    float: left;
-    width: 300px;
-    height: 500px;
-    position: relative;
-    background-position: -100px 0;
-  }
-
-  .slider-stopper {
-    position: absolute;
-    top: 1px;
-    right: 20px;
-    background: #ac0000;
-    color: white;
-    padding: 3px 8px;
-    font-size: 10px;
-    text-transform: uppercase;
-    z-index: 1000;
-  }
-
-  .temp {
-    position: absolute;
-    color: white;
-    font-size: 30px;
-    bottom: 15px;
-    left: 15px;
-    font-weight: 100;
-    font-family: "Lato", sans-serif;
-  }
-
-  #slide-0 {
-    background-image: url(Shift-Reporter.png);
-  }
-
-  #slide-1 {
-    background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
-  }
-
-  #slide-2 {
-    background-image: url(High-Roller-Img.png);
-    max-width: 100%;
-  }
-
-  #slide-3 {
-    background-image: url(morse-pic.jpg);
-    max-width: 100%;
-  }
-
-  .slide:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    background: linear-gradient(transparent, black);
-  }
-
-  .slider-nav {
-    text-align: center;
-    margin: 10px 0 0 0;
-  }
-
-  .slider-nav a {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: #ddd;
-    overflow: hidden;
-    text-indent: -9999px;
-    border-radius: 50%;
-  }
-
-  .slider-nav a.active {
-    background: #999;
-  }
-
-  /* Typewriter animation */
-  p {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-weight: 100px;
-    font-size: 18px;
-    margin: 10px 0 0 10px;
-    overflow: hidden;
-    width: 80em;
-    animation: type 4s steps(100, end);
-    scroll-behavior: smooth;
-  }
-
-  p:nth-child(2) {
-    animation: type2 4s steps(100, end);
-    scroll-behavior: smooth;
-  }
-
-  .css-typing p:nth-child(1) {
-    width: 7.3em;
-    -webkit-animation: type 2s steps(40, end);
-    animation: type 2s steps(40, end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
-  .css-typing p:nth-child(2) {
-    width: 11.5em;
-    opacity: 0;
-    -webkit-animation: type2 2s steps(40, end);
-    animation: type2 2s steps(40, end);
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
-  .css-typing p:nth-child(3) {
-    width: 7.3em;
-    opacity: 0;
-    -webkit-animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
-    animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: 0.15em solid orange;
-    }
-    100% {
-      border: none;
-    }
-  }
-  @-webkit-keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: 0.15em solid orange;
-    }
-    100% {
-      border: none;
-    }
-  }
-  @keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: 0.15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  @-webkit-keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: 0.15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  @keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @-webkit-keyframes blink {
-    50% {
-      border-color: tranparent;
-    }
-  }
-  @keyframes type {
-    from {
-      width: 0;
-    }
-  }
-  @keyframes type2 {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 0;
-    }
-    100% {
-      width: 100;
-    }
-  }
-  ::selection {
-    background: black;
-  }
-
-  /* The image used */
-  #canvas {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -10;
-    top: 0;
-    left: 0;
-  }
-
-  .canvas {
-    font-size: #fff;
-  }
-
-  /* Contact Form */
-  i.container {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
-
   #contact input[type=text],
 #contact input[type=email],
 #contact input[type=tel],
@@ -967,7 +905,6 @@
   flex-direction: column;
 }
 
-/* external css: flickity.css */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
