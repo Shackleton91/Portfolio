@@ -42,7 +42,7 @@ canvas {
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  font-size: 100%;
   color: white;
   text-align: center;
   white-space: nowrap;
@@ -51,7 +51,7 @@ canvas {
 }
 
 /* Animation */
-.anim-typewriter {
+#anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
 
@@ -896,6 +896,7 @@ section .card {
 
   .languages-container {
     color: white;
+    margin-bottom: 100px;
   }
 }
 #about-box {

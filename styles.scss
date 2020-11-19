@@ -34,7 +34,7 @@ font-size: #fff;
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
+    font-size: 100%;
     color: white;
     text-align: center;
     white-space: nowrap;
@@ -43,7 +43,7 @@ font-size: #fff;
 }
 
 /* Animation */
-.anim-typewriter{
+#anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
@@ -822,6 +822,7 @@ fieldset {
 
 .languages-container {
     color: white;
+    margin-bottom: 100px;
 }
 
 
