@@ -31,6 +31,10 @@
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
     </head> 
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
     <header> 
         <section>
             <nav class="navbar">
@@ -59,11 +63,10 @@
              <section id="" class="landing"> 
                      <section class="power-btn"></section>  
                      <a target="" href="#button" id="button">&#xF011;</a><span class="light"></span>  
-                     <div><img src="BW-ME.jpg" class="me" alt=""></div>   
+                     <img src="BW-ME.jpg" class="me" alt=""> 
                     <h1 class="neon-heading first" id="h1Id"><span class="flickering-2">Steve </span><span class="flickering-1">Shackleton  </span><br><span class="flickering-3">Junior Developer</span></h1>
                     <h1 class="neon-heading-second"></h1>
                     </div>
-                </div>
             </section>
                                 <!-- </p>
                             </div>
@@ -91,14 +94,14 @@
                                     <h2>Client Project: Shift Reporter</h2>
                                 </header>
 
-                                    <div class="card-author">
+                                    <div class="card-picture">
                                         <a href=https://shiftreporter-3420e.web.app/ target="_blank">
                                             <i class="fab fa-react fa-3x"></i>   
                                         </a>
                                         <!-- <svg class="half-circle" viewBox="0 0 106 20">
                                             <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
                                           </svg> -->
-                                        <!-- <img src="Shift-Reporter.png" /> -->
+                                        <!-- <img src="Shift-Reporter.png" class="cover"/ > -->
                                     </div>
                             </article>
 
@@ -115,24 +118,26 @@
                                         <!-- <svg class="half-circle" viewBox="0 0 106 20">
                                             <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
                                           </svg> -->
-                                        <!-- <img src="Shift-Reporter.png" /> -->
+                                        <!-- <img src="Shift-Reporter.png" class="cover" /> -->
                                     </div>
                             </article>
 
                             <article class= "card">
                                 <header class="card-header">
-                                    <p>This JS project allows you to translate English to morse code, it also plays soundbytes of everyone's favourite daytime inspector.  </p>
+                                    <p>This JS project allows you to translate English to morse code, it also plays soundbites of everyone's favourite daytime inspector. Functional programming as the project is composed using just functions and not classes from Objects.  </p>
                                     <h2>Inspector Morse Code: JS Translator</h2>
                                 </header>
 
-                                    <div class="card-author">
+                                    <div >
                                         <a href=https://inspector-morse-code-translator.shackdev.com target="_blank">
-                                            <i class="fab fa-js fa-3x"></i>   
+                                               
                                         </a>
                                         <!-- <svg class="half-circle" viewBox="0 0 106 20">
                                             <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
                                           </svg> -->
-                                         <!-- <img src="morse-pic.jpg" /> -->
+                                          <i class="fab fa-js fa-3x"></i> 
+                                         <img src="morse-pic.jpg" class="card-picture"/>
+                                        
                                     </div>
                             </article>
 
@@ -186,7 +191,7 @@
                     </article>
                     <article id="about-box">
                         <br></br>
-                        <p class="line-1 id="anim-typewriter">
+                        <p class="line" id="anim-typewriter">
                             Hi I'm Steve Shackleton 👋 Junior Software Developer 💻.. gym enthusiast 🏋️‍♂️.. dog lover 🐕..music maker 🎧.. thespian 🎬..
 Born and raised in Birmingham and now based in London.
 I got my degree in Music and Theatre in 2014 🎓 and since then have worked a variety of office jobs such as HR and project coordinator for varies companies. 
@@ -194,7 +199,7 @@ Now in the life changing year of 2020 I've taken the leap to combine my innate c
                         </p>
                         <img src="Birmingham5thDec200740.jpg" class="Birmingham">
                     </div>
-                        
+                </article>
                     
                     </div>
                   
@@ -243,27 +248,27 @@ Now in the life changing year of 2020 I've taken the leap to combine my innate c
                     </footer>
                 </section>
             </div>
-            <div class="container">  
-                <form id="contact" action="" method="post">
+            <div class="contact-form">  
+                <form action="https://getform.io/f/86fadaa4-1eed-478b-a39f-546ed38eb4fc" method="POST">
                   <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" required >
+                    <input placeholder="Your name" type="text" tabindex="1" name="name" required >
                   </fieldset>
                   <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" name="email" required>
                   </fieldset>
                   <fieldset>
-                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" name="message">
                   </fieldset>
                   <fieldset>
-                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4">
+                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" name="message">
                   </fieldset>
                   <fieldset>
-                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                    <textarea placeholder="Type your message here...." tabindex="5" name="message" required></textarea>
                   </fieldset>
                   <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button><a
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" value="Submit">Submit</button><a
                     href="mailto:steveshackleton@hotmail.co.uk"
-                        target="">
+                        target="_blank">
                   </fieldset>
                 </form>
               </div>
