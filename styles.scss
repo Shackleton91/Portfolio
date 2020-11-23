@@ -478,7 +478,7 @@ align-items: center;
     height: 225px;
     opacity: 0.6;
     align-items: center;
-    max-width: 60%;
+    max-width: 100%;
   } 
   #Birmingham {
     margin: 40px;
@@ -780,7 +780,7 @@ span.flickering-3 {
 
 
 // Contact form
-form{
+#contact{
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
