@@ -111,13 +111,14 @@ font-size: #fff;
 
   .line {
     position: relative;
+    display: flex;
     // top: 50%;  
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 100%;
     color: white;
-    text-align: center;
+    // text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
@@ -435,7 +436,7 @@ font-size: #fff;
  
   }
 
-.About { 
+.About-box { 
 display: flex;
  justify-content: center;
 align-items: center;
@@ -478,9 +479,9 @@ align-items: center;
 
 #me {
     margin: 30px;
-    border-radius: 30%;
-    height: 125px;
-    width: 125px;
+    border-radius: 20%;
+    height: 200px;
+    width: 175px;
     opacity: 0.6;
     align-items: center;
   } 
@@ -491,6 +492,17 @@ align-items: center;
     align-items: center;
     z-index: -1;
     position: relative;
+    max-width: 100%;
+  }  
+  #London {
+    margin: 40px;
+    border-radius: 8px;
+    opacity: 0.6;
+    align-items: center;
+    z-index: -1;
+    position: relative;
+    height: 225px;
+    // max-width: 100%;
   }  
   :active, :focus {
 	outline: 0;

@@ -147,12 +147,12 @@ div.responsive {
 
 .line {
   position: relative;
+  display: flex;
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: 100%;
   color: white;
-  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
@@ -453,7 +453,7 @@ section .card {
     margin-bottom: 200px;
   }
 
-  .About {
+  .About-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -494,9 +494,9 @@ section .card {
 
   #me {
     margin: 30px;
-    border-radius: 30%;
+    border-radius: 20%;
     height: 200px;
-    width: 200px;
+    width: 175px;
     opacity: 0.6;
     align-items: center;
   }
@@ -508,6 +508,17 @@ section .card {
     align-items: center;
     z-index: -1;
     position: relative;
+    max-width: 100%;
+  }
+
+  #London {
+    margin: 40px;
+    border-radius: 8px;
+    opacity: 0.6;
+    align-items: center;
+    z-index: -1;
+    position: relative;
+    height: 225px;
   }
 
   :active, :focus {
