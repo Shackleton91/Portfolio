@@ -47,16 +47,20 @@ canvas {display: block;}
   }
 }
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 1200px ) {
   img.responsive { width: 200px; }
+  div.responsive { width: 200px; }
   }
   @media screen and ( min-width:1025px ) and ( max-width: 1280px ) {
   img.responsive { width: 300px; }
+  div.responsive { width: 300px; }
   }
   @media screen and ( min-width: 1081px ) {
   img.responsive { width: 400px; }
+  div.responsive { width: 400px; }
   }
   img.responsive { height: auto; }
+  div.responsive { height: auto; }
 
 #top, #bottom, #left, #right {
   // background: #F3340d;

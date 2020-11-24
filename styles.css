@@ -55,9 +55,17 @@ canvas {
   img.responsive {
     width: 200px;
   }
+
+  div.responsive {
+    width: 200px;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   img.responsive {
+    width: 300px;
+  }
+
+  div.responsive {
     width: 300px;
   }
 }
@@ -65,8 +73,16 @@ canvas {
   img.responsive {
     width: 400px;
   }
+
+  div.responsive {
+    width: 400px;
+  }
 }
 img.responsive {
+  height: auto;
+}
+
+div.responsive {
   height: auto;
 }
 
@@ -482,7 +498,7 @@ section .card {
     height: 225px;
     opacity: 0.6;
     align-items: center;
-    max-width: 60%;
+    max-width: 100%;
   }
 
   #Birmingham {
@@ -832,12 +848,12 @@ section .card {
       opacity: 1;
     }
   }
-  form #contact input[type=text],
-form #contact input[type=email],
-form #contact input[type=tel],
-form #contact input[type=url],
-form #contact textarea,
-form #contact button[type=submit] {
+  #contact #contact input[type=text],
+#contact #contact input[type=email],
+#contact #contact input[type=tel],
+#contact #contact input[type=url],
+#contact #contact textarea,
+#contact #contact button[type=submit] {
     font: 400 12px/16px "Fira Sans", Helvetica, Arial, sans-serif;
   }
 
