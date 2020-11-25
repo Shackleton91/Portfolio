@@ -69,25 +69,21 @@ canvas {display: block;}
   background: #FFF;
   position: fixed;
 	}
-	#left, #right {
-		top: 0; bottom: 0;
-    width: 5px;
-    border-style: solid;
-    border-width: medium;
-    border-radius: 5px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
+	// #left, #right {
+	// 	top: 0; bottom: 0;
+  //   width: 5px;
+  //   border-radius: 5px;
+	// 	}
+	// 	#left { left: 0; }
+	// 	#right { right: 0; }
 		
-	#top, #bottom {
-		left: 0; right: 0;
-    height: 5px;
-    border-style: solid;
-    border-width: medium;
-    border-radius:5px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+	// #top, #bottom {
+	// 	left: 0; right: 0;
+  //   height: 5px;
+  //   border-radius:5px;
+	// 	}
+	// 	#top { top: 0; }
+	// 	#bottom { bottom: 0; }
 
 /* The image used  for binary animation*/
 #canvas  {
@@ -430,7 +426,11 @@ font-size: #fff;
   }
 
  
-
+.body-style {
+  border-color: white;
+  border-style: solid;
+   border-width: medium;
+}
  
 .landing {
     display: flex;
