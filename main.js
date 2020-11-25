@@ -9,7 +9,9 @@ var iconbottom = document.querySelector('.navbar__hamburger-bottom');
 // On Button//
 const OnButton = document.querySelectorAll("a")[5];
 
-
+// Opacity change function 
+// const changePicBright =  document.getElementsById("picchange").style.opacity = 1; 
+// const changePicDark =  // document.getElementsById("picchange").style.opacity = 0.6;
 
 // Nav&Hamburger Nav
 hamburger.addEventListener('click', function() {
@@ -70,10 +72,12 @@ let toggle = false;
     OnButton.classList.add("on");
     // Loop the animation
     interval = setInterval(draw, 33);
+    document.getElementsById("picchange").style.opacity = 1;
   } else {
     clearInterval(interval);
     OnButton.classList.remove("on");
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+    document.getElementsById("picchange").style.opacity = 0.6;
   }
   
   //  OnButton.classList.remove("on")

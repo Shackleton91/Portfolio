@@ -519,6 +519,7 @@ section .card {
     text-align: center;
     line-height: 79px;
     background-color: #53575d;
+    cursor: pointer;
     transition: color 350ms ease, text-shadow 350ms;
     -o-transition: color 350ms ease, text-shadow 350ms;
     -moz-transition: color 350ms ease, text-shadow 350ms;
