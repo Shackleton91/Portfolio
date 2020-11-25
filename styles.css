@@ -86,11 +86,6 @@ div.responsive {
   height: auto;
 }
 
-#top, #bottom, #left, #right {
-  background: #FFF;
-  position: fixed;
-}
-
 /* The image used  for binary animation*/
 #canvas {
   width: 100%;
@@ -570,7 +565,7 @@ section .card {
     width: 8px;
     height: 8px;
     position: absolute;
-    top: 175px;
+    top: 179px;
     background-color: #e20000;
     box-shadow: inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5), 0px 0px 3px 2px rgba(226, 0, 0, 0.5);
     border-radius: 4px;
