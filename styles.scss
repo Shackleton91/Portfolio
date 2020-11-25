@@ -1,6 +1,8 @@
 * {margin: 0; padding: 0}
 body {background: #000;}
+// body{background: url(http://subtlepatterns.com/patterns/micro_carbon.png);}
 canvas {display: block;} 
+
 
 @media all and (min-width: 1001px) {
   #sidebar ul li a:after {
@@ -65,20 +67,24 @@ canvas {display: block;}
 #top, #bottom, #left, #right {
   // background: #F3340d;
   background: #FFF;
-	position: fixed;
+  position: fixed;
 	}
 	#left, #right {
 		top: 0; bottom: 0;
-    width: 2px;
-    border-radius: 2px;
+    width: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
 		}
 		#left { left: 0; }
 		#right { right: 0; }
 		
 	#top, #bottom {
 		left: 0; right: 0;
-    height: 2px;
-    border-radius:2px;
+    height: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-radius:5px;
 		}
 		#top { top: 0; }
 		#bottom { bottom: 0; }
@@ -106,9 +112,10 @@ font-size: #fff;
  text-align: center;
  canvas {display: block;}
 
-
   }   
 
+
+  
   .line {
     position: relative;
     display: flex;
@@ -387,10 +394,10 @@ font-size: #fff;
   .navbar__menuitem {
     font-family: 'Fira Sans', sans-serif;
       display: inline-block;
-      background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
+      // background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   }
   .navbar__menuitem:hover {
-    background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
+    // background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
       box-shadow: inset 0 -5px 0 0 #FFF;
       border-left-color: transparent;
   }
@@ -428,12 +435,11 @@ font-size: #fff;
 .landing {
     display: flex;
     align-items: flex-start;
+    flex-shrink: -1;
   align-items: center;
   flex-direction: column;
-  background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   border-radius: 50px;
  margin-bottom: 200px;
- 
   }
 
 .About-box { 
@@ -551,17 +557,17 @@ align-items: center;
 	display: block;
 	z-index: -2;
 	position: absolute;
-	background-color: rgb(26,27,29);
+	background-color: rgb(0, 0, 0);
 	left: -5px;
 	top: -2px;
 	border-radius: 40px;
-	box-shadow: 0px 1px 0px 0px rgba(250,250,250,0.1), 
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1), 
 			 	inset 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 #button:active {
     box-shadow: 0px 0px 0px 0px rgb(34,34,34),
     			0px 3px 7px 0px rgb(17,17,17),
-    			inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+    			inset 0px 1px 1px 0px rgba(7, 7, 7, 0.2), 
     			inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
     background-color: rgb(83,87,93);
   	top: 3px;
@@ -569,7 +575,7 @@ align-items: center;
 #button.on {
     box-shadow: 0px 0px 0px 0px rgb(34,34,34),
     			0px 3px 7px 0px rgb(17,17,17), 
-    			inset 0px 1px 1px 0px rgba(250, 250, 250, .2), 
+    			inset 0px 1px 1px 0px rgba(7, 7, 7, 0.2), 
     			inset 0px -10px 35px 5px rgba(0, 0, 0, .5);
     background-color: rgb(83,87,93);
   	top: 3px;
@@ -579,7 +585,7 @@ align-items: center;
 #button:active:before, a.on:before {
 	top: -5px;
 	background-color: rgb(26,27,29);
-	box-shadow: 0px 1px 0px 0px rgba(250,250,250,0.1), 
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1), 
 			 	inset 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 /* Styling the Indicator light */
@@ -796,7 +802,7 @@ span.flickering-3 {
 
 
 // Contact form
-form{
+.contact form{
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
