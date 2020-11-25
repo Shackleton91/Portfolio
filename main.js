@@ -72,12 +72,12 @@ let toggle = false;
     OnButton.classList.add("on");
     // Loop the animation
     interval = setInterval(draw, 33);
-    document.getElementsById("picchange").style.opacity = 1;
+    // document.getElementsById("picchange").style.opacity = 1;
   } else {
     clearInterval(interval);
     OnButton.classList.remove("on");
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    document.getElementsById("picchange").style.opacity = 0.6;
+    // document.getElementsById("picchange").style.opacity = 0.6;
   }
   
   //  OnButton.classList.remove("on")
