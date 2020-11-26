@@ -246,6 +246,7 @@ section .card {
 
 .card-header {
   margin-bottom: auto;
+  padding: 5px;
 }
 
 .card-header p {
@@ -836,13 +837,13 @@ span.flickering-3 {
     opacity: 1;
   }
 }
-.contact form #contact input[type=text],
-.contact form #contact input[type=email],
-.contact form #contact input[type=tel],
-.contact form #contact input[type=url],
-.contact form #contact textarea,
-.contact form #contact button[type=submit] {
-  font: 400 12px/16px "Fira Sans", Helvetica, Arial, sans-serif;
+form #contact input[type=text],
+form #contact input[type=email],
+form #contact input[type=tel],
+form #contact input[type=url],
+form #contact textarea,
+form #contact button[type=submit] {
+  font: 400 12px/16px "Arial", sans-serif;
 }
 
 #contact {
