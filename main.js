@@ -80,7 +80,6 @@ let toggle = false;
     // document.getElementsById("picchange").style.opacity = 0.6;
   }
   
-  //  OnButton.classList.remove("on")
  
 
 

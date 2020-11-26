@@ -86,6 +86,9 @@ canvas {display: block;}
 // 		#top { top: 0; }
 // 		#bottom { bottom: 0; }
 
+
+
+
 /* The image used  for binary animation*/
 #canvas  {
   width: 100%;
@@ -114,28 +117,28 @@ font-size: #fff;
 
   
   .line {
-    position: relative;
+    position: left;
     display: flex;
-    // top: 50%;  
-    width: 24em;
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 150em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 100%;
     color: white;
-    // text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
+    max-width: 85%;
 }
 
 /* Animation */
 #anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 6s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter {
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 150em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -144,7 +147,8 @@ font-size: #fff;
 
 
   @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
-// Cards 
+
+  // Cards 
   section .card {
     padding: 0;
     margin: 0;
@@ -439,14 +443,15 @@ font-size: #fff;
     flex-shrink: -1;
   align-items: center;
   flex-direction: column;
-  border-radius: 50px;
+  //   border-color: white;
+  // border-style: solid;
+  //  border-width: medium;
  margin-bottom: 200px;
   }
 
 .About-box { 
 display: flex;
  justify-content: center;
-align-items: center;
 flex-direction: column;
 // background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
   border-radius: 50px;
@@ -480,9 +485,15 @@ align-items: center;
   margin-bottom: 200px;
  }   
 
-//  .container {  
-  // background: url(http://subtlepatterns.com/patterns/micro_carbon.png);
-// }   
+ // Snap Scroll 
+ #container {
+  flex-basis: 50%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  // border: 1px solid gray;
+  scroll-snap-type: y mandatory;
+  }
+}
 
 #me {
     margin: 30px;
@@ -925,7 +936,7 @@ fieldset {
 
 
 
-} 
+
 
 // About box
 #about-box {
