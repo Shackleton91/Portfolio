@@ -70,6 +70,10 @@ let toggle = false;
   console.log(toggle);
   if (toggle === true){
     OnButton.classList.add("on");
+    // // Section to show Media Player
+    // if (toggle === true){
+    // OnButton.classList.add("on");
+
     // Loop the animation
     interval = setInterval(draw, 33);
     // document.getElementsById("picchange").style.opacity = 1;
@@ -77,7 +81,7 @@ let toggle = false;
     clearInterval(interval);
     OnButton.classList.remove("on");
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    // document.getElementsById("picchange").style.opacity = 0.6;
+//  Add hide media player instruction here
   }
   
  

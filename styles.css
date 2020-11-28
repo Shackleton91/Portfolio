@@ -111,7 +111,6 @@ div.responsive {
 }
 
 .line {
-  position: left;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   width: 200em;
@@ -122,8 +121,9 @@ div.responsive {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  max-width: 85%;
+  max-width: 100%;
   padding: 10px;
+  text-align: center;
 }
 
 /* Animation */
