@@ -1,271 +1,169 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Shackleton</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <script
             src="https://kit.fontawesome.com/21668e4100.js"
             crossorigin="anonymous"></script>
-        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        />
-        <link rel="stylesheet" href="styles.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
-        <script src="jquery-3.5.1.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/site.webmanifest">   
-        <link href='https://fonts.googleapis.com/css?family=Sirin Stencil' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
-    </head> 
-    <header> 
-        <section>
-            <nav class="navbar">
-                <a href="" class="navbar__logo"><img src="favicon-32x32.png" alt=""></a>
-                <button class="navbar__hamburger" aria-label="menu" aria-controls="navigation">
-              <span class="navbar__hamburger-top"></span>
-              <span class="navbar__hamburger-middle"></span>
-              <span class="navbar__hamburger-bottom"></span>
-            </button>    
-            <a href="#project-folder" class="navbar__menuitem" role="menuitem" >PROJECTS</a>
-                <a href="#about-me" class="navbar__menuitem" role="menuitem">ABOUT ME</a>
-                <a href="#experienced-languages" class="navbar__menuitem" role="menuitem">EXPERIENCE</a>
-                <a href="#how-to-get-in-touch" class="navbar__menuitem" role="menuitem">CONTACT</a>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"><img src="assets/img/favicon-32x32.png"></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-compass"></i>
+                </div>
             </nav>
-        </section>
-    </header>
+        </header>
 
-
-
-<body class="body-style">
-             <section id="responsive" class="landing">   
-                     <a class="button" id="button">&#xF011;</a><span class="light"></span>  
-                     <img src="BW-ME.jpg" class="responsive" id="me"/> 
-                    <h1 class="neon-heading first" id="h1Id"><span class="flickering-2">Steve </span><span class="flickering-1">Shackleton  </span><br><span class="flickering-3">Junior Developer</span></h1>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title" class="neon-heading first" id="h1Id">Steve<br>Shackleton <span class="home__title-color"></span></span><span class="flickering-1"></span><br> <span class="flickering-3">Junior Developer</span></h1>
                     <h1 class="neon-heading-second"></h1>
-                    <canvas id="canvas" width="100%" height="100%"></canvas>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a  href="http://linkedin.com/in/steve-shackleton-43900aa4" target="_blank" class="home__social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://github.com/Shackleton91" target="_blank" class="home__social-icon"><i class="fab fa-github-square fa-3x"></i></a>
+                    <a href="mailto:steveshackleton@hotmail.co.uk" target="_blank" class="home__social-icon"> <i class="fas fa-envelope-square fa-3x"></i>
+                </a>
+
+                </div>
+
+                <div class="home__img">    
+                    <!-- <img src="assets/img/Soft-Skills-1536x1536.png" alt=""> -->
+                </div>
             </section>
-    
-    
 
-            <section class="two">
-                <a id="project-folder"></a>
-                        <h2 class="neon-heading first"><span class="flickering-2">PROJECTS</span><span class="flickering-1"></span><br><span class="flickering-3"></span></h2>
-                    <h2 class="neon-heading-second"></h2>
-                        <p class="typewriter">Browse through some of my completed projects below:</p> </div>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title"class="neon-heading first"><span class="flickering-1">About<span class="flickering-2"></span></h2></h2>
 
-                          <section class= "card-list">
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This is a group client project that we created in React. The fully functioning  mining management system app, for a South African mining consultancy will help
-                                        improve employees safety, as well as serving companies by making the tracking of their costs and
-                                        statistics simpler. </p>
-                                    <h2>Client Project: Shift Reporter</h2>
-                                </header>
-
-                                    <div class="card-author">
-                                        <a href="https://shiftreporter-3420e.web.app" target="__blank">
-                                            <i class="fab fa-react fa-3x"></i>   
-                                        </a>
-                                        
-                                        <!-- <img src="Shift-Reporter.png" class="cover"/ > -->
-                                    </div>
-                            </article>
-
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This mini React project which is hooked up to the Brewdog API allows you to search through Brewdog's catalogue of beers.  </p>
-                                    <h2>Punk API BrewDog: React App</h2>
-                                
-
-                                    <div class="card-author">
-                                        <!-- <a href=https://shiftreporter-3420e.web.app/ target="_blank"> -->  
-                                        </a>
-                                        <!-- <svg class="half-circle" viewBox="0 0 106 20">
-                                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                                          </svg> -->
-                                        <!-- <img src="Shift-Reporter.png" class="cover" /> -->
-                                        <i class="fab fa-react fa-3x"></i> 
-                                    </div>
-                            </article>
-
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This JS project translates English to morse code, it also plays soundbites of everyone's favourite daytime inspector. Functional programming as the project is composed using just functions and not classes from Objects.  </p>
-                                    <h2>Inspector Morse Code: JS Translator</h2>
-                                </header>
-
-                                <div class="card-author">
-                                        <a href=https://inspector-morse-code-translator.shackdev.com target="__blank">  
-                                            <i class="fab fa-js fa-3x"></i>  
-                                        </a>
-                                        
-                                    </div>
-                                </article>
-
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This JS game pits two players against one another in a race to reach 80 points! The logic for the random dice rolls is created with math.random</p>
-                                    <h2>High Roller: JS Game</h2>
-                                </header>
-
-                                    <div class="card-author">
-                                        <a href=https://dicegame.shackdev.com target="__blank">  
-                                            <i class="fab fa-js fa-3x"></i>
-                                        </a>
-                                        <!-- <svg class="half-circle" viewBox="0 0 106 20">
-                                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                                          </svg> -->      
-                                    </div>
-                            </article>
-
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This is a fully functioning calculator styled like the one on the iphone, the logic was created in JS and the styling is basic CSS.</p>
-                                    <h2>iPhone Calculator: JS Project</h2>
-                                    <div class="card-author">
-                                        <a href=https://iphone-calculator.shackdev.com target="__blank">
-                                            <i class="fab fa-js fa-3x"></i> 
-                                        </a>
-                                        
-                                    </div>
-                            </article>
-
-                            <!-- <article class= "card">
-                                <header class="card-header">
-                                    <p>This was a Js project</p>
-                                    <h2>Project6</h2>
-                            </article>
-
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This was a Js project</p>
-                                    <h2>Project7</h2>
-                            </article>
-
-                            <article class= "card">
-                                <header class="card-header">
-                                    <p>This was a Js project</p>
-                                    <h2>Project8</h2>
-                            </article> -->
-
-                          </section>
-                        
-
-
-                    <section class="About">
-                    <a id="about-me"></a>
-                    <article id="headline">
-                        <h2 class="neon-heading first"><span class="flickering-1">ABOUT</span><br><span class="flickering-2">ME</span></h2> 
-                    </article>
-                    <article id="about-box">
-                        <br></br>
-                        <div class="line" id="anim-typewriter">
-                        <p>
-                            Hi I'm Steve Shackleton 👋 Junior Software Developer 💻.. gym enthusiast 🏋️‍♂️.. dog lover 🐕..music maker 🎧.. thespian 🎬.. Born and raised in Birmingham and now based in London. <br>
-                            I got my degree in Music and Theatre in 2014 🎓 and since then have worked a variety of office jobs such as HR and project coordinator for varies companies.<br>
-                             Now in the life changing year of 2020 I've taken the leap to combine my innate creativity with my natural tech minded brain to train with _Nology to become a Software developer.
-                        </p>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/headshot-180px.jpg" alt="pic of me">
                     </div>
-                    <section id="picchange">
-                        <img src="Birmingham5thDec200740.jpg" class="responsive" id="Birmingham"/>
-                        <img src="London.jpeg" class="responsive" id="London"/>
-                    </section>
-                    </div>
-                </article>
                     
-                </section>
-                
-                    
-                
-                <div class="languages-container">
-                        <a id="experienced-languages"></a>
-                <!-- <p class="replaceStrings" data-typeit-id="0audxoqg9e9u"><b style="color:#f3340d;">Scroll</b> to continue <span class="ti-cursor" style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;">|</span></p> -->
-                <h2 class="neon-heading first"><span class="flickering-2">EXPERIENCE</span><span class="flickering-1"></span><br><span class="flickering-3"></span></h2>
-                    <h2 class="neon-heading-second"></h2>
-                    <p class="para-exp">Languages I'm experienced in:</p>
-                  <i class="fab fa-html5 fa-3x"></i>
-                <i class="fab fa-css3-alt fa-3x"></i>
-                <i class="fab fa-js fa-3x"></i>
-                <i class="fab fa-react fa-3x"></i>
-                <i class="fab fa-sass fa-3x"></i>
-                <i class="fab fa-python fa-3x"></i>
-            </div>
+                    <div>
+                        <h2 class="about__subtitle">A little About Me...</h2>
+                        <p class="about__text">Hi I'm Steve Shackleton 👋 Junior Software Developer 💻.. gym enthusiast 🏋️‍♂️.. dog lover 🐕..music maker 🎧.. thespian 🎬.. Born and raised in Birmingham and now based in London. <br>
+                            I graduated with a degree in Music and Theatre in 2014 🎓. Since then I've worked in a variety of roles including Finance, HR and Project Management for several companies, operating within different industries.<br>
+                             Now in the life changing year of 2020 I've taken the leap to combine my innate creativity with my natural tech minded brain and trained with _Nology to become a Software developer.</p>           
+                    </div>                                   
+                </div>
             </section>
-            
 
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-            <a id="how-to-get-in-touch"></a>
-              <!-- <p class="replaceStrings" data-typeit-id="0audxoqg9e9u"><b style="color:#f3340d;">Scroll</b> to continue <span class="ti-cursor" style="display:inline;position:relative;font:inherit;color:inherit;line-height:inherit;">|</span></p> -->
-              <h2 class="neon-heading first"><span class="flickering-3">CONTACT</span></h2>
-                    <h2 class="neon-heading-second"></h2>
-              <!-- <p>How to get in touch:</p></div> -->
-              <section class="six">
-                    <footer class="Contact">
-                        <div class="background">
-                            <a
-                                href="https://github.com/Shackleton91"
-                                target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-                            
-                            
-                            <a
-                                href="http://linkedin.com/in/steve-shackleton-43900aa4"
-                                target="_blank"
-                                ><i class="fab fa-linkedin fa-3x"></i></a>
-                            
-                            
-                            <a
-                            href="mailto:steveshackleton@hotmail.co.uk"
-                                target="">
-                            <i class="fas fa-envelope-square fa-3x"></i>
-                        </a>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Browse through my skills list below:</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">
+                                    <i class="fab fa-html5 fa-3x"></i>
+                                    <i class="fab fa-css3-alt fa-3x"></i>
+                                    <i class="fab fa-js fa-3x"></i>
+                                    <i class="fab fa-react fa-3x"></i>
+                                    <i class="fab fa-sass fa-3x"></i>
+                                    <i class="fab fa-python fa-3x"></i>
+                                </span>
+                            </div>
                         </div>
-            </div>
-        </section>
-            <div class="contact"id="">  
-                <br>
-                <form action="https://getform.io/f/86fadaa4-1eed-478b-a39f-546ed38eb4fc" method="POST">
-                  <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" name="name" required >
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" name="email" required>
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" name="message">
-                  </fieldset>
-                  <fieldset>
-                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" name="message">
-                  </fieldset>
-                  <fieldset>
-                    <textarea placeholder="Type your message here...." tabindex="5" name="message" required></textarea>
-                  </fieldset>
-                  <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" value="Submit">Submit</button><a
-                    href="mailto:steveshackleton@hotmail.co.uk"
-                        target="_blank">
-                  </fieldset>
-                </form>
-              </div>
-            </section>   
-        </body>
-        <script src="main.js"></script>
+                            </div>
+                            <img src="assets/img/Soft-Skills-1536x1536.png" alt="" class="skills__img">
+                        </div>
+                        <div>              
+                        </div>
+            </section>
 
-        
-        <footer>
+            <!--===== projects =====-->
+            <section class="projects section" id="projects">
+                <h2 class="section-title"class="neon-heading first"><span class="flickering-2">Projects</h2>   
+                <div class="projects__container bd-grid">
+                    <div class="projects__img">
+                        <img src="assets/img/Shift-Reporter.png" alt="" >
+                        <a href="https://shiftreporter-3420e.web.app" target="__blank">
+                    </div>
+                    <div class="projects__img">
+                        <img src="assets/img/morse-pic.jpg" alt="">
+                        <a href=https://inspector-morse-code-translator.shackdev.com target="__blank"></a>
+                    </div>
+                    <div class="projects__img">
+                        <img src="assets/img/High-Roller-Img.png" alt="">
+                        <a href=https://dicegame.shackdev.com target="__blank"></a>
+                    </div>
+                    <div class="projects__img">
+                        <img src="assets/img/iPhone-Calculator.jpg" alt="">
+                        <a href=https://iphone-calculator.shackdev.com target="__blank"></a>
+                    </div>
+                    <!-- <div class="projects__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="projects__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div> -->
 
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="https://getform.io/f/86fadaa4-1eed-478b-a39f-546ed38eb4fc" method="POST" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input" required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Type your message here.." required></textarea>
+                        <input name="submit" type="button" id="contact-submit" data-submit="...Sending" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p>&#169; 2020 copyright Steve Shackleton</p>
+            
         </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
