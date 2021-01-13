@@ -55,6 +55,11 @@
   html{
     scroll-behavior: smooth;
   }
+
+  p{
+    font-family: var(--p-font);
+    font-weight: bold;
+  }
   body{
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
@@ -77,9 +82,6 @@
     height: auto;
     display: block;
   } 
-  p{
-    font-family: var(--p-font);
-  }
   
   /*===== CSS Classes ===== */
   .section-title{
