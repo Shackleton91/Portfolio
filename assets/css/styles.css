@@ -17,6 +17,7 @@
   /*===== Fonts and Typography =====*/
   :root{
     --body-font: 'Bungee', sans-serif;
+    --p-font: 'Roboto', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -75,6 +76,9 @@
     max-width: 100%;
     height: auto;
     display: block;
+  } 
+  p{
+    font-family: var(--p-font);
   }
   
   /*===== CSS Classes ===== */
